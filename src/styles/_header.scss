@@ -1,9 +1,21 @@
 header{
-    background-color: aquamarine;
-    nav ul li {
-        text-decoration: none;
-        color: blue;
-        list-style: none;
+    border: solid red 5px;
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
     }
-
 }

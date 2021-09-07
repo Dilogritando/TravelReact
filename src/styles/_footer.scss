@@ -1,0 +1,11 @@
+footer{
+    border: solid red 5px;
+    .footer__info{
+        border: solid green 3px;
+        &--corporate{
+            .list{
+                list-style: none;
+            }
+        }
+    }
+}
