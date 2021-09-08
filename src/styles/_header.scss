@@ -1,19 +1,66 @@
-header{
-    border: solid red 5px;
-    nav {
+@import "./_variables";
+/* @import "../assets/header/Fondo.png"; */
+
+.hcontainer{
+    /* background-image: url("/src/assets/header/Fondo.png"); */
+    margin: 0 0 105px 0;
+    padding: 0;
+    width: 100%;
+    header{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-end;
-        ul {
+        justify-content: space-between;
+        padding: 0;
+        .clear{
+            width: 20%;
+            margin: 0;
+        }
+        nav {
+            width: 70%;
             display: flex;
             flex-direction: row;
-            list-style: none;
-            li{
-                a{
-                    text-decoration: none;
-                    color: black;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0 6%;
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 73%;
+                list-style: none;
+                padding: 0;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                li{
+                    margin: 0 4%;
+                    a{
+                        text-decoration: none;
+                        font-family: #{$gsans};
+                        color: #{$first};
+                    }
+                }
+            }
+            button{
+                width: 102px;
+                height: 40px;
+                border: 1px solid #212832;
+                border-radius: 5px;
+                font-family: #{$gsans};
+                color: #{$first};
+                background-color: transparent;
+                margin: 0;
+            }
+            .language{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 7%;
+                justify-content: space-between;
+                margin: 0 0 0 4%;
+                &__selected{
+                    font-family: #{$gsans};
+                    color: #{$first};
                 }
             }
         }

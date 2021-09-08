@@ -5,11 +5,11 @@ const Steps = () => {
     return (
             <div className="steps">
                 <div className="steps--subtitle subtitle">
-                    CATEGORY
+                    Easy and cool
                 </div>
                 <div className="steps__content">
                     <div className="steps__content--texts">
-                        <h2>Book your next trip in 3 easy steps</h2>
+                        <h2 className="steps__content--title">Book your next trip in 3 easy steps</h2>
                         <StepBox src="" alt="Figure of a square drawn in lines" title="Choose Destination" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "/>
                         <StepBox src="" alt="Figure of a man swimming" title="Make Payment" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "/>
                         <StepBox src="" alt="Icon of a taxi" title="Reach Airport on Selected Date" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "/>

@@ -16,10 +16,6 @@ const DestinationCards = (props) => {
                         </p>
                     </div>
                 </div>
-                 <h6>{props.title}</h6>
-                 <p className="service__card--description">
-                    {props.description}
-                 </p>
             </div>
     )
 }

@@ -1,11 +1,103 @@
+@import "./_variables";
 footer{
     border: solid red 5px;
+    width: 100%;
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
     .footer__info{
         border: solid green 3px;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0 0 85px 0;
         &--corporate{
+            display: flex;
+            flex-direction: row;
             .list{
+                display: flex;
+                flex-direction: column;
                 list-style: none;
+                &__title{
+                    font-family: #{$poppins};
+                    color: black;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 124.5%;
+                    text-align: center;
+                    text-transform: capitalize;
+                    padding: 0;
+                    margin: 0;
+                }
+                &__content{
+                    a{
+                        font-family: #{$poppins};
+                        color: #{$txtclear};
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 124.5%;
+                        text-align: left;
+                        padding: 0;
+                        margin: 0;
+                        text-decoration: none;
+                    }
+                }
             }
         }
+        &--web{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        &--social{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+        }
+        &--store{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            p{
+                font-family: #{$poppins};
+                color: #{$txtclear};
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 124.5%;
+                text-align: center;
+                letter-spacing: 0.005em;
+                padding: 0;
+                margin: 0;
+            }
+            .footer__buttons{
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                img{
+                    width: 107px;
+                    height: 35px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    p{
+        font-family: #{$poppins};
+        color: #{$txtclear};
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 124.5%;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 79px 0;
     }
 }

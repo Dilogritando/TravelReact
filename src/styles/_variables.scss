@@ -1,3 +1,44 @@
 //Fonts
+@font-face {
+    font-family: 'Product Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Bold'), url('/src/assets/fonts/ProductSans-Bold.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600&family=Volkhov:wght@700&display=swap');
+$gsans: "'Product Sans Bold', sans-serif";
+$mont: "'Montserrat', sans-serif";
+$open: "'Open Sans', sans-serif";
+$poppins: "'Poppins', sans-serif";
+$volkov: "'Volkhov', serif";
 
 //Colors
+$first: rgba(24, 30, 75, 1);
+$subtorange: rgba(223, 105, 81, 1);
+$txtclear: rgba(94, 98, 130, 1);
+$btnfind: rgba(241, 165, 1, 1);
+$third: rgba(20, 24, 62, 1);
+$heading: rgba(30, 29, 76, 1);
+$txtcolor: rgba(104, 109, 119, 1);
+$txtcolor2: rgba(57, 66, 93, 1);
+
+.subtitle {
+	font-family: #{$poppins};
+	font-weight: 600;
+	font-size: 18px;
+	color: #{$txtclear};
+    padding: 0;
+    margin: 0 0 8px 0;
+}
+h2{
+    font-family: #{$volkov};
+    color: #{$third};
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}

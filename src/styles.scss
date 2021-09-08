@@ -7,6 +7,7 @@
 @import "./styles/_companies";
 @import "./styles/_subscribe";
 @import "./styles/_footer";
+@import "./styles/_variables";
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -42,16 +43,4 @@ body {
 }
 ol, ul {
 	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+};

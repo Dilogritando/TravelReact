@@ -66,6 +66,15 @@ const Footer = () => {
                         <img src="" alt="Instagram logo redirects to Instagram Page" />
                         <img src="" alt="Twitter logo redirects to Twitter Page" />
                     </div>
+                    <div className="footer__info--store">
+                        <p className="list__content">
+                            Discover our app
+                        </p>
+                        <div className="footer__buttons">
+                            <img src="" alt="Google Play Store" />
+                            <img src="" alt="Apple Store" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <p className="footer__contact">techTest@test.co</p>

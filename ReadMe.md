@@ -8,7 +8,8 @@ El objetivo es maquetar el front-end de la siguiente [landing page](https://www.
 3. Desde la terminal, correr el comando `npm run start` para iniciar el servidor, se puede ver en [http://localhost:3000](http://localhost:3000).
 4. Para generar el bundle de producción correr `npm run build`
 
-
+## Se validaron los siguientes breakpoints para responsive:
+* Tablet Y computadores: Pantallas de 1024px en adelante.
 
 ## Este proyecto se creó usando:
 * NVM: 0.38.8
