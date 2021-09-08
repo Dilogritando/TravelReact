@@ -1,8 +1,7 @@
 @import "./_variables";
 .destinations{
-    border: solid blue 5px;
     background-image: url("../assets/destinations/DecoreDestinations.svg");
-    background-position: right bottom;
+    background-position: 99% 88%;
     background-repeat: no-repeat;
     margin: 0 0 186px 0;
     padding: 0 6%;
@@ -13,7 +12,6 @@
         width: 100%;
         margin: 60px 0 0 0;
         padding: 0;
-        border: solid indianred 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

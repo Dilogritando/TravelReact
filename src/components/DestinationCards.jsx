@@ -2,9 +2,18 @@ import React from "react";
 import "../styles/_destinationCards.scss"
 import Compass from "../assets/destinations/Vector.svg"
 const DestinationCards = (props) => {
+    let image = props.src;
+    let imageStyles = {
+        backgroundPosition: '49% 10%',
+        backgroundSize: '151% 151%',
+        backgroundRepeat: 'no-repeat',
+        backgroundImage: "url(" + image + ")",
+        borderRadius: "24px 24px 0 0",
+    }
     return (
             <div className="destination__card">
-                <img src={props.src} alt={props.alt} />
+                <figure style={ imageStyles }>
+                </figure>
                 <div className="destination__card--content">
                     <div className="location">
                         <p className="location__name">{props.name}</p>

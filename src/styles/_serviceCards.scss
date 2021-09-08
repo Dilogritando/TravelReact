@@ -1,38 +1,53 @@
 @import "./_variables";
-.service__card{
+.service__container{
+    width: 28%;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    width: 22%;
-    background: #FFFFFF;
-    border-radius: 36px;
-    margin: 0;
-    padding: 2% 1%;
     align-items: center;
-    text-align: center;
     justify-content: flex-end;
     &:hover{
-        border: solid red 3px;
+        background-image: url("../assets/services/ActiveCard.png");
+        background-size: 28% 27%;
+        background-position: left bottom;
+        background-repeat: no-repeat;
     }
-    img {
-        max-height: 95px;
-    }
-    h6{
-        font-family: #{$open};
-        color: #{$heading};
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        padding: 0;
-        margin: 0 0 15px 0;
-    }
-    p{
-        font-family: #{$poppins};
-        color: #{$txtclear};
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        padding: 0;
-        margin: 0;
+    .service__card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 58%;
+        background: #FFFFFF;
+        border-radius: 36px;
+        margin: 0 0 35px 0;
+        padding: 9% 11%;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-end;
+        &:hover{
+            -webkit-box-shadow: 0px 17px 36px -12px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 17px 36px -12px rgba(0,0,0,0.75);
+            box-shadow: 0px 17px 36px -12px rgba(0,0,0,0.75);
+        }
+        img {
+            max-height: 95px;
+        }
+        h6{
+            font-family: #{$open};
+            color: #{$heading};
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            padding: 0;
+            margin: 0 0 15px 0;
+        }
+        p{
+            font-family: #{$poppins};
+            color: #{$txtclear};
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            padding: 0;
+            margin: 0;
+        }
     }
 }

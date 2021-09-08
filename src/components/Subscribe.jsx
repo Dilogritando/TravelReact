@@ -12,8 +12,7 @@ const Subscribe = () => {
                     </h3>
                     <div className="subscribe__box__buttons">
                         <label className="subscribe__box__buttons--email">
-                            <input type="email"/>
-                            <span className="placeholder"> Your Email </span>
+                            <input className="placeholder" type="email" placeholder="Your Email" />
                         </label>
                         <input className="subscribe__box__buttons--send" type="submit" value="Subscribe" />
                     </div>
