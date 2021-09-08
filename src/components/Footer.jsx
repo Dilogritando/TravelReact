@@ -1,5 +1,10 @@
 import React from "react";
 import "../styles/_footer.scss"
+import FbIcon from "../assets/footer/FB.png";
+import IGIcon from "../assets/footer/IG.png";
+import TWIcon from "../assets/footer/Twitter.png";
+import Apple from "../assets/footer/PlayStore.png";
+import GStore from "../assets/footer/GooglePlay.png";
 const Footer = () => {
     return (
         <footer>
@@ -62,17 +67,17 @@ const Footer = () => {
                 </div>
                 <div className="footer__info--web">
                     <div className="footer__info--social">
-                        <img src="" alt="Facebook logo redirects to Facebook Page" />
-                        <img src="" alt="Instagram logo redirects to Instagram Page" />
-                        <img src="" alt="Twitter logo redirects to Twitter Page" />
+                        <img src={FbIcon} alt="Facebook logo redirects to Facebook Page" />
+                        <img src={IGIcon} alt="Instagram logo redirects to Instagram Page" />
+                        <img src={TWIcon} alt="Twitter logo redirects to Twitter Page" />
                     </div>
                     <div className="footer__info--store">
                         <p className="list__content">
                             Discover our app
                         </p>
                         <div className="footer__buttons">
-                            <img src="" alt="Google Play Store" />
-                            <img src="" alt="Apple Store" />
+                            <img src={GStore} alt="Google Play Store" />
+                            <img src={Apple} alt="Apple Store" />
                         </div>
                     </div>
                 </div>

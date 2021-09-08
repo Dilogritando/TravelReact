@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/_destinationCards.scss"
+import Compass from "../assets/destinations/Vector.svg"
 const DestinationCards = (props) => {
     return (
             <div className="destination__card">
@@ -10,7 +11,7 @@ const DestinationCards = (props) => {
                         <p className="location__price">{props.price}</p>
                     </div>
                     <div className="time">
-                        <img src="" alt="Compass arrow pointing up" />
+                        <img src={Compass} alt="Compass arrow pointing up" />
                         <p className="time--text">
                             {props.time}
                         </p>

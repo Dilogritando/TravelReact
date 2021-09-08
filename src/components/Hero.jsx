@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/_hero.scss"
+import PlayBtn from "../assets/header/PlayButton.png";
+import Traveller from "../assets/header/Traveller.png";
 const Hero = () => {
     return (
             <div className="hero">
@@ -14,13 +16,13 @@ const Hero = () => {
                     <div className="hero__texts--buttons">
                         <button type="button">Find out more</button>
                         <figure className="demo">
-                            <img src="" alt="Play icon for the demo" />
+                            <img src={ PlayBtn } alt="Play icon for the demo" />
                             <figcaption>Demo</figcaption>
                         </figure>
                     </div>
                 </div>
                 <figure className="hero__image">
-                    <img src="" alt="Happy traveler with suitcase and tickets" />
+                    <img src={ Traveller } alt="Happy traveler with suitcase and tickets" />
                 </figure>
             </div>
     )
