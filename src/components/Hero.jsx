@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/_hero.scss"
-import PlayBtn from "../assets/header/PlayButton.png";
+import "../styles/_hero.scss";
 import Traveller from "../assets/header/Traveller.png";
+import PlayBtn from "../assets/header/PlayButton.png";
 const Hero = () => {
     return (
             <div className="hero">
@@ -9,7 +9,7 @@ const Hero = () => {
                     <div className="hero__texts--subtitle subtitle" id="hero__texts--subtitle">
                         Best Destinations around the world
                     </div>
-                    <h1>Travel, enjoy <br/> and live a new <br/> and full life</h1>
+                    <h1>Travel<span>, enjoy</span> <br/> and live a new <br/> and full life</h1>
                     <p>
                         Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
                     </p>

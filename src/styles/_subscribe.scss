@@ -1,7 +1,8 @@
 @import "./_variables";
 .subscribe{
-    border: solid violet 5px;
-    width: 100%;
+    background-image: url("../assets/subscribe/BackgroundPattern.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
     padding: 0 6%;
     margin: 0 0 117px 0;
     display: flex;
@@ -11,13 +12,29 @@
     img{
         width: 70px;
         height: 70px;
-        margin: 0;
+        margin: 0 0 -3% 0;
         padding: 0;
+        position: relative;
+        left: 49%;
+    }
+    &__container{
+        background-image: url("../assets/subscribe/SubscriptionBoxBack.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin: 0 0 10% 0;
+        border-radius:  129px 20px 20px 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
     }
     &__box{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 5% 0%;
+        margin: 0;
+        width: 100%;
         h3{
             font-family: #{$poppins};
             color: #{$txtclear};
@@ -30,12 +47,9 @@
             margin: 0 0 74px 0;
         }
         &__buttons{
-            img{
-                width: 21px;
-                height: 18px;
-                margin: 0;
-                padding: 0;
-            }
+            width: 100%;
+            display: flex;
+            justify-content: center;
             &--email{
                 font-family: #{$mont};
                 color: #{$txtcolor2};
@@ -45,7 +59,25 @@
                 line-height: 17px;
                 text-align: left;
                 padding: 0;
-                margin: 0;
+                margin: 0 24px 0 0;
+                border-radius: 10px;
+                input{
+                    border: none;
+                    width: 421px;
+                    height: 68px;
+                }
+                .placeholder{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    position: relative;
+                    bottom: 50%;
+                    left: 10%;
+                    &::before{
+                        content: url("../assets/subscribe/Envelope.svg");
+                        margin: 0 14px 0 0;
+                    }
+                }
             }
             &--send{
                 width: 180px;

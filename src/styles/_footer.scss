@@ -1,23 +1,28 @@
 @import "./_variables";
 footer{
-    border: solid red 5px;
-    width: 100%;
     padding: 0 6%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     .footer__info{
-        border: solid green 3px;
+        width: 100%;
+        margin: 0 0 85px 0;
+        padding: 0;
         display: flex;
         flex-direction: row;
-        padding: 0;
-        margin: 0 0 85px 0;
+        justify-content: flex-end;
         &--corporate{
+            width: 100%;
             display: flex;
             flex-direction: row;
+            justify-content: flex-end;
             .list{
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
                 list-style: none;
+                padding: 0;
+                margin: 0px 9% 0 0;
                 &__title{
                     font-family: #{$poppins};
                     color: black;
@@ -28,9 +33,11 @@ footer{
                     text-align: center;
                     text-transform: capitalize;
                     padding: 0;
-                    margin: 0;
+                    margin: 0 0 34px 0;
                 }
                 &__content{
+                    padding: 0;
+                    margin: 0 0 16px 0;
                     a{
                         font-family: #{$poppins};
                         color: #{$txtclear};
@@ -40,7 +47,7 @@ footer{
                         line-height: 124.5%;
                         text-align: left;
                         padding: 0;
-                        margin: 0;
+                        margin: 0 0 12px 0;
                         text-decoration: none;
                     }
                 }
@@ -49,13 +56,15 @@ footer{
         &--web{
             display: flex;
             flex-direction: column;
-            margin: 0;
+            justify-content: flex-start;
+            margin: 0 0 0 82px;
             padding: 0;
         }
         &--social{
             display: flex;
             flex-direction: row;
-            margin: 0;
+            justify-content: space-around;
+            margin: 0 0 26px 0;
             padding: 0;
         }
         &--store{
@@ -73,7 +82,7 @@ footer{
                 text-align: center;
                 letter-spacing: 0.005em;
                 padding: 0;
-                margin: 0;
+                margin: 0 0 16px 0;
             }
             .footer__buttons{
                 display: flex;
@@ -99,5 +108,6 @@ footer{
         text-align: center;
         padding: 0;
         margin: 0 0 79px 0;
+        align-self: center;
     }
 }

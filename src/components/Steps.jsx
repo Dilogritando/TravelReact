@@ -18,7 +18,7 @@ const Steps = () => {
                         <StepBox src={Payment} alt="Figure of a man swimming" title="Make Payment" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "/>
                         <StepBox src={Taxi} alt="Icon of a taxi" title="Reach Airport on Selected Date" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "/>
                     </div>
-                    <img src={Mock} alt="Mock-up of the travel app" />
+                    <img className="steps__content--image" src={Mock} alt="Mock-up of the travel app" />
                 </div>
             </div>
     )

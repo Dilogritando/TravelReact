@@ -6,7 +6,7 @@ const TestimonialCard = (props) => {
             <img src={props.src} alt={props.author} />
             <div className="testimonial__card--content">
                 <p className="testimony">{props.content}</p>
-                <strong>{props.author}</strong>
+                <strong>{props.author}</strong> <br />
                 <span>{props.location}</span>
             </div>
         </div>

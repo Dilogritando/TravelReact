@@ -29,24 +29,11 @@ module.exports={
             },
             {
                 test: /\.(s*)css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    'css-loader',
-                    'sass-loader'
-                ]
-            },
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+              },
             {
+                type: "asset",
                 test: /\.(png|gif|jpg|svg)$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                        name: 'assets/[hash].[ext]',
-                        },
-                    },
-                ],
             },
 
         ]
@@ -55,9 +42,6 @@ module.exports={
         new HtmlWebPackPlugin({
             template: './public/index.html',
             filename: './index.html'
-        }),
-        new MiniCssExtractPlugin({
-            filename: 'assets/[name].css'
-        }),
+        })
     ]
 };

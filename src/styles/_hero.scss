@@ -1,14 +1,19 @@
 @import "./_variables";
 .hero {
-    width: 100%;
-    border: solid orangered 5px;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     padding: 0 6%;
     &__texts{
+        margin: 0;
+        padding: 10% 0 0 0;
         #hero__texts--subtitle {
             color: #{$subtorange};
             margin: 0 0 24px 0;
+            padding: 0;
+        }
+        &--decore{
+            margin: 0% 0% -12% 32%;
             padding: 0;
         }
         h1{
@@ -19,6 +24,14 @@
             letter-spacing: -0.04em;
             margin: 0 0 30px 0;
             padding: 0;
+            span{
+                margin: 0;
+                padding: 0px 44px 0 0;
+                background-image: url("../assets/header/Decore.png");
+                background-position: 0% 81%;
+                background-size: 125% 13%;
+                background-repeat: no-repeat;
+            }
         }
         p{
             font-family: #{$poppins};
@@ -26,6 +39,7 @@
             font-weight: 500;
             font-size: 1em;
             margin: 0 0 34px 0;
+            width: 62%;
         }
         &--buttons{
             display: flex;
@@ -45,32 +59,37 @@
                 color: white;
                 font-family: #{$gsans};
                 font-size: 18px;
+                cursor: pointer;
             }
             .demo{
                 display: flex;
                 flex-direction: row;
-                padding: 0;
-                margin: 0;
-                align-items: flex-start;
+                padding: 12px 0 0 0;
+                margin: 0 0 0 44px;
                 img{
-                    width: 52px;
-                    height: 52px;
+                    width: 100px;
+                    height: 100px;
                     padding: 0;
-                    margin: 0;
+                    margin: 0 0 -10px 0;
+                    cursor: pointer;
                 }
                 figcaption{
                     font-family: #{$poppins};
                     font-size: 17px;
                     font-weight: 500;
                     color: #{$txtcolor};
+                    padding: 23px 0 0 0;
+                    margin: 0;
+                    align-self: self-start;
                 }
             }
         }
     }
     &__image{
-        width: 50%;
         padding: 0;
-        margin: 0;
+        margin: 0 0 0 -22%;
+        width: 765px;
+        height: 764px;
         img{
             padding: 0;
             margin: 0;
