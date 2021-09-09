@@ -21,6 +21,11 @@ $third: rgba(20, 24, 62, 1);
 $heading: rgba(30, 29, 76, 1);
 $txtcolor: rgba(104, 109, 119, 1);
 $txtcolor2: rgba(57, 66, 93, 1);
+
+//Breakpoints
+$laptopS: "(max-width: 1024px)";
+
+//General
 #app{
 	width: 100%;
 }

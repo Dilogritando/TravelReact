@@ -1,16 +1,15 @@
 @import "./_variables";
 .testimonials{
-    border: solid blue 5px;
     margin: 0 0 100px 0;
     padding: 0 6%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     &__text{
-        width: 146%;
         display: flex;
         flex-direction: column;
         padding: 0;
-        margin: 0 87px 0 0;
+        margin: 0 26px 0 0;
         &--title{
             text-align: left;
             padding: 0;
@@ -25,12 +24,90 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 64%;
+        margin: 0;
+        padding: 0;
         &--cards{
-            width: 100%;
+            width: 85%;
             display: flex;
             flex-direction: column;
             padding: 0;
-            margin: 30px 66px 0 0;
+            margin: 0;
+            .slick-slider{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                .slick-list{
+                    height: 450px !important;
+                    width: 100%;
+                    margin: 0;
+                    padding: 25px 0 0 10px;
+                    .slick-track{
+                        width: 100%;
+                        padding: 4% 0 0 29%;
+                        position: relative;
+                        .slick-slide{
+                            width: 72% !important;
+                            height: 245px;
+                            border: 2px solid rgba(247, 247, 247, 1);
+                            padding: 0;
+                            border-radius: 10px;
+                            opacity: 0.4;
+                            z-index: -1;
+                        }
+                        .slick-active, .slick-current{
+                            background-color: #FFFFFF;
+                            margin: 0 0 -29px 0%;
+                            -webkit-box-shadow: 0px 59px 57px -13px rgba(94,98,130,0.58);
+                            -moz-box-shadow: 0px 59px 57px -13px rgba(94,98,130,0.58);
+                            box-shadow: 0px 59px 57px -13px rgba(94,98,130,0.58);
+                            opacity: 1;
+                            position: relative;
+                            top: 46px;
+                            right: 98px;
+                            z-index: 9;
+                        }
+                    }
+                }
+                .slick-arrow{
+                    display: none;
+                }
+                .slick-prev{
+                    &::before{
+                        display: none;
+                    }
+                }
+                .slick-next{
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            .slick-dots{
+                position: relative;
+                right: 156%;
+                top: 200px;
+                width: fit-content;
+                height: fit-content;
+                display: flex !important;
+                @media #{$laptopS}{
+                    top: 260px;
+                }
+                li{
+                    button{
+                        &::before{
+                            color: rgba(229, 229, 229, 1);
+                        }
+                    }
+                    & .slick-active{
+                        button{
+                            &::before{
+                                color: #{$txtcolor2};
+                            }
+                        }
+                    }
+                }
+            }
         }
         &--navArrows{
             width: 14px;
@@ -39,9 +116,13 @@
             height: 80px;
             justify-content: space-between;
             align-self: center;
-            img{
+            button{
                 width: 14px;
                 height: 7px;
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+                border: none;
             }
         }
     }
