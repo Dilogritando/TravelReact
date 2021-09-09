@@ -19,3 +19,4 @@ El objetivo es maquetar el front-end de la siguiente [landing page](https://www.
 * Babel 7.15.5
 * SaSS 10.38.2 compiled with dart2js 2.13.4
 * React 17.0.2
+* [React-Slick](https://github.com/akiran/react-slick) 0.28.0
